@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+	rel="stylesheet">
+
+<title>Add Bill</title>
+<style>
+body {
+	background: #E5E5E5;
+}
+
+.desktop___2 {
+	width: 1400px;
+	height: 853.3333129882812px;
+	position: absolute;
+	background-image: url(addbill.png);
+	background-size: cover;
+	position: absolute;
+}
+
+.group_22 {
+	width: 593px;
+	height: 427px;
+	position: absolute;
+	left: 403px;
+	top: 214px;
+}
+
+.add_billers {
+	color: rgba(0, 0, 0, 1);
+	width: 129px;
+	height: 36px;
+	position: absolute;
+	left: 292px;
+	top: 0px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.please_fill_the_below_field {
+	color: rgba(0, 0, 0, 1);
+	width: 307px;
+	height: 36px;
+	position: absolute;
+	left: 4px;
+	top: 75px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.enter_biller_name_ {
+	color: rgba(0, 0, 0, 1);
+	width: 215px;
+	height: 36px;
+	position: absolute;
+	left: 46px;
+	top: 151px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.choose_bill_category_ {
+	color: rgba(0, 0, 0, 1);
+	width: 261px;
+	height: 36px;
+	position: absolute;
+	left: 0px;
+	top: 227px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.enter_amount_ {
+	color: rgba(0, 0, 0, 1);
+	width: 174px;
+	height: 36px;
+	position: absolute;
+	left: 87px;
+	top: 303px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.billernameinput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 325px;
+	height: 60px;
+	position: absolute;
+	left: 268px;
+	top: 140px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.choosebillinput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 325px;
+	height: 60px;
+	position: absolute;
+	left: 268px;
+	top: 215px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.amntinput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 325px;
+	height: 60px;
+	position: absolute;
+	left: 268px;
+	top: 291px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.amntinput1 {
+	background-color: rgba(255, 255, 255, 1);
+	width: 325px;
+	height: 60px;
+	position: absolute;
+	left: 268px;
+	top: 360px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.addbillbtn {
+	width: 121px;
+	height: 41px;
+	position: absolute;
+	left: 207px;
+	top: 440px;
+	background-color: rgba(255, 87.00000241398811, 34.00000177323818, 1);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.rectangle_33 {
+	background-color: rgba(255, 87.00000241398811, 34.00000177323818, 1);
+	width: 121px;
+	height: 41px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.add_bill {
+	color: rgba(0, 0, 0, 1);
+	width: 61px;
+	height: 24px;
+	position: absolute;
+	left: 30px;
+	top: 8px;
+	font-family: Poppins;
+	text-align: left;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+</style>
+</head>
+<body>
+	<div class=desktop___2>
+		<div class=group_22>
+			<form action="addbill.jsp">
+				<span class="add_billers">Add Bill</span> <span
+					class="please_fill_the_below_field"><b> Please fill the
+						below fields</b></span> <span class="enter_biller_name_">Enter Biller
+					Name:</span> <input type="text" class=billernameinput
+					placeholder="Enter Biller Name" name="bilname" required> <span
+					class="choose_bill_category_">Choose Bill Category:</span> <span
+					class="enter_amount_">Enter Amount:</span>  <select name="cat"
+					class="choosebillinput">
+					<option value="Grocery & Daily needs">Grocery & Daily
+						needs</option>
+					<option value="Insurance & Finance">Insurance & Finnance</option>
+					<option value="Travelling">Travelling</option>
+					<option value="Health">Health</option>
+					<option value="Education">Education</option>
+					<option value="Charity">Charity</option>
+					<option value="Adventure & Fun">Adventure & Fun</option>
+					<option value="Misscellaneous">Misscellaneous</option>
+				</select><br> <br> <input class="amntinput" type="range" min=0
+					max=100000 value=0 name="amt"
+					onchange="updateTextInput(this.value)" required> <input
+					class="amntinput1" type="number" id="textInput" value=""> <br>
+				<br>
+
+
+			
+				<button type="submit" class=addbillbtn>Add Bill</button>
+		</form>
+		</div>
+	</div>
+
+	<script>
+		function updateTextInput(val) {
+			document.getElementById('textInput').value = val;
+		}
+	</script>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forget password</title>
+</head>
+<body>
+	<form action="fpass.jsp" method="post">
+
+	<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter your username" name="uname" required><br><br>
+	
+	<label for="bday"><b>birthdate</b></label>
+	<input type="date" name="bday" min="1900-01-01" max="2100-12-31" required><br><br>
+
+ 	<label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required><br><br>
+
+    <label for="passrepeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="passrepeat" required><br><br>
+
+      <button type="submit" >Update password</button>
+
+</form>
+</body>
+</html>

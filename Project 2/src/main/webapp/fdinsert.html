@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" / rel="stylesheet">
+
+<style type="text/css">
+
+.personaldatainput { 
+	background-color:rgba(205.06250202655792, 255, 243.01500231027603, 0.4000000059604645);
+	width:1200px;
+	height:853.3333129882812px;
+	position:absolute;
+}
+.personal_details { 
+	color:rgba(0, 0, 0, 1);
+	width:191px;
+	height:44px;
+	position:absolute;
+	left:504px;
+	top:76px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.email_id_ { 
+	color:rgba(0, 0, 0, 1);
+	width:99px;
+	height:44px;
+	position:absolute;
+	left:164px;
+	top:221px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.mobile_number_ { 
+	color:rgba(0, 0, 0, 1);
+	width:188px;
+	height:44px;
+	position:absolute;
+	left:70px;
+	top:313px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.income_ { 
+	color:rgba(0, 0, 0, 1);
+	width:96px;
+	height:44px;
+	position:absolute;
+	left:167px;
+	top:405px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.emailinputpersonaldata { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:283px;
+	top:214px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.mobilenopersonaldata { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:283px;
+	top:306px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.incomeinput { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:283px;
+	top:398px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.incomeinput1 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:683px;
+	top:398px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.budgetinput { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:283px;
+	top:490px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.budgetinput1 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:342px;
+	height:58px;
+	position:absolute;
+	left:683px;
+	top:490px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.budget_ { 
+	color:rgba(0, 0, 0, 1);
+	width:92px;
+	height:44px;
+	position:absolute;
+	left:172px;
+	top:497px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.savebtn { 
+	width:160px;
+	height:63px;
+	position:absolute;
+	
+}
+.saveinput { 
+	background-color:rgba(255, 87.00000241398811, 34.00000177323818, 1);
+	width:160px;
+	height:63px;
+	position:absolute;
+	left:374px;
+	top:597px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.save { 
+	color:rgba(0, 0, 0, 1);
+	width:40px;
+	height:20px;
+	position:absolute;
+	left:59px;
+	top:21px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+}
+</style>
+<meta charset="UTF-8">
+<title>Personal details</title>
+</head>
+<body>
+<form action=fdinsert.jsp>
+<div class=personaldatainput>
+         <span  class="personal_details">Personal Details</span>
+              <span  class="email_id_">Email id: </span>
+              <span  class="mobile_number_">Mobile Number:</span>
+              <span  class="income_">Income:</span>    
+               <span  class="budget_">Budget:</span>
+     
+	
+    <input class="emailinputpersonaldata" type="email" placeholder="Enter email id" name=email required> <br><br>
+    <input class="mobilenopersonaldata" type="text" placeholder="Enter mobile number" name="mob" required><br><br>
+
+<input class="incomeinput" type="range" min=0 max=100000 value=0  name="inc" onchange="updateTextInput1(this.value)" required>
+			<input class="incomeinput1" type="number" id="textInput1" value="">
+ 	
+	<input class="budgetinput" type="range" min=0 max=100000 value=0  name="bjt" onchange="updateTextInput(this.value)" required>
+			<input class="budgetinput1"type="number" id="textInput" value="">
+    
+
+              
+       <button  class="saveinput"type="submit" >Save</button>
+       </form>
+       <script>
+		function updateTextInput(val) {
+			document.getElementById('textInput').value = val;
+		}
+		function updateTextInput1(val1) {
+			document.getElementById('textInput1').value = val1;
+		}
+	</script>
+</body>
+</html>

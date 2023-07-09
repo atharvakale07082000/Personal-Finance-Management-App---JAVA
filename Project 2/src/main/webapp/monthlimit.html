@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" / rel="stylesheet">
+
+<meta charset="UTF-8">
+<title>Month Limit</title>
+</head>
+<style>
+
+.monthlylimit { 
+	background-color:rgba(205.06250202655792, 255, 243.01500231027603, 0.3100000023841858);
+	width:1400px;
+	height:995.5599975585938px;
+	position:absolute;
+}
+.empty_wallet_1 { 
+	width:591px;
+	height:628px;
+	position:absolute;
+	left:51px;
+	top:184px;
+	background-image:url(images/empty_wallet_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.monthly_limit { 
+	color:rgba(0, 0, 0, 1);
+	width:164px;
+	height:36px;
+	position:absolute;
+	left:957px;
+	top:260px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.save { 
+	position: absolute;
+	width: 153px;
+	height: 60px;
+	left: 938px;
+	top: 690px;
+	background-color:rgba(255, 87.00000241398811, 34.00000177323818, 1);
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;} 
+
+.choose_a_category { 
+	color:rgba(0, 0, 0, 1);
+	width:236px;
+	height:36px;
+	position:absolute;
+	left:700px;
+	top:360px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.choose_month { 
+	color:rgba(0, 0, 0, 1);
+	width:236px;
+	height:36px;
+	position:absolute;
+	left:700px;
+	top:433px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.enter_monthly_limit { 
+	color:rgba(0, 0, 0, 1);
+	width:232px;
+	height:36px;
+	position:absolute;
+	left:704px;
+	top:519px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.rectangle_35 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:347px;
+	height:64px;
+	position:absolute;
+	left:969px;
+	top:419px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.rectangle_36 {  
+	background-color:rgba(255, 255, 255, 1);
+	width:347px;
+	height:64px;
+	position:absolute;
+	left:969px;
+	top:500px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+ .body {background: #E5E5E5; }
+.rectangle_37 {  
+	background-color:rgba(255, 255, 255, 1);
+	width:347px;
+	height:64px;
+	position:absolute;
+	left:969px;
+	top:580px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.rectangle_38 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:347px;
+	height:64px;
+	position:absolute;
+	left:969px;
+	top:340px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+</style>
+<body>
+
+<form action="monthlimit.jsp" >
+   <div class=monthlylimit>
+   <div  class="empty_wallet_1"></div>
+    <span  class="monthly_limit">Monthly Limit</span>
+    
+   <span class="choose_a_category">Choose a Category</span>
+	<select class="rectangle_38" name="cat">
+  	<option value="Grocery & Daily needs">Grocery & Daily needs</option>
+  	<option value="Insurance & Finance">Insurance and finance</option>
+  	<option value="Travelling">Travelling</option>
+  	<option value="Health">Health</option>
+  	<option value="Education">Education</option>
+  	<option value="Charity">Charity</option>
+  	<option value="Adventure & Fun">Adventure & Fun</option>
+  	<option value="Misscellaneous">Miscellaneous</option>
+	</select>
+	<span class= choose_month >Choose a month</span>
+	<select class="rectangle_35" name="month">
+  	<option value="Janurary">Janurary</option>
+  	<option value="February">February</option>
+  	<option value="March">March</option>
+  	<option value="April">April</option>
+  	<option value="May">May</option>
+  	<option value="June">June</option>
+  	<option value="July">July</option>
+  	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+	</select>
+	<span  class="enter_monthly_limit">Enter Monthly Limit</span>
+    <input class="rectangle_36"type="range" min=0 max=100000 value=0  name="amt" onchange="updateTextInput(this.value)" required>
+			<input class="rectangle_37"type="number" id="textInput" value="">
+	
+	 <button type =submit class="save">Save</span>
+</form>
+<script>
+		function updateTextInput(val) {
+			document.getElementById('textInput').value = val;
+		}
+	</script>
+</body>
+</html>
